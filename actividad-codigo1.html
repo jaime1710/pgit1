@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>codigo</title>
+</head>
+<body>
+
+<h1>articulo 1</h1>
+
+<p id="c1"></p>
+<p id="n1"></p>
+<p id="p1"></p>
+
+<h1>articulo 2</h1>
+
+<p id="c2"></p>
+<p id="n2"></p>
+<p id="p2"></p>
+</body>
+<script>
+	//Primera forma de crear un objeto
+  var articulo1 = {
+  	codigo: "zapa",
+  	nombre: "zapato",
+    precio: 50
+  }	
+//Segunda forma para crear un objeto
+
+var articulo2 = new Object();
+    articulo2.codigo = "cor";
+    articulo2.nombre = "corbata";
+    articulo2.precio = 10
+
+
+document.getElementById("c1").innerHTML = articulo1.codigo;
+document.getElementById("n1").innerHTML = articulo1.nombre;
+document.getElementById("p1").innerHTML = articulo1.precio;
+
+document.getElementById("c2").innerHTML = articulo2.codigo;
+document.getElementById("n2").innerHTML = articulo2.nombre;
+document.getElementById("p2").innerHTML = articulo2.precio;
+
+
+
+</script>
+</html>
